@@ -1,5 +1,5 @@
 # ignore notepad files #
-*.txt
+*.c
 
 # ignore dat files #
 *.dat
