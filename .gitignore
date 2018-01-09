@@ -1,5 +1,11 @@
-# ignore notepad files #
+# ignore all cfiles #
 *.c
 
 # ignore dat files #
 *.dat
+
+# do  not ignore myfirst.c #
+!myfirst.c
+
+# ignore only the PTS file in the current directory, not subdir/PTS #
+/PTS 
