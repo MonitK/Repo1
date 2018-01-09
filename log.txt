@@ -1,0 +1,2419 @@
+ LPG Use case.uml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git commit -m "first version"
+On branch master
+
+Initial commit
+
+Untracked files:
+        LPG Use case.uml
+
+nothing added to commit but untracked files present
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git remote add origin "https://github.com/MonitK/9-Jan1.1"
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git push -u origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'https://github.com/MonitK/9-Jan1.1'
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git commit -m "first version"
+On branch master
+
+Initial commit
+
+Untracked files:
+        LPG Use case.uml
+
+nothing added to commit but untracked files present
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        LPG Use case.uml
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ clear
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git init
+Reinitialized existing Git repository in D:/UML/LPG Use case1/.git/
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git commit -m "hello"
+On branch master
+
+Initial commit
+
+Untracked files:
+        LPG Use case.uml
+
+nothing added to commit but untracked files present
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ cd ..
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML
+$ cd
+
+mkapoor@mkapoor-ltp MINGW64 /x
+$ cd D
+;bash: cd: D: No such file or directory
+
+mkapoor@mkapoor-ltp MINGW64 /x
+$ cd D:
+
+mkapoor@mkapoor-ltp MINGW64 /d
+$ cd "D:\UML\LPG Use case1"
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git commit -m "first version"
+[master (root-commit) 6541e2b] first version
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3461 insertions(+)
+ create mode 100644 LPG Use case.uml
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git remote add origin "https://github.com/MonitK/9-Jan1.1"
+fatal: remote origin already exists.
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 25.00 KiB | 3.13 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/MonitK/9-Jan1.1
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
+$ cd ..
+
+mkapoor@mkapoor-ltp MINGW64 /d/UML
+$ cd ..
+
+mkapoor@mkapoor-ltp MINGW64 /d
+$ cd /
+
+mkapoor@mkapoor-ltp MINGW64 / (master)
+$ git add .
+warning: LF will be replaced by CRLF in Program Files/Git/LICENSE.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/ReleaseNotes.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/cmd/start-ssh-agent.cmd.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/cmd/start-ssh-pageant.cmd.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/DIR_COLORS.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/bash.bash_logout.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/bash.bashrc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/docx2txt.config.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/fstab.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/inputrc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/msystem.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/nanorc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/nsswitch.conf.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/package-versions.txt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/pkcs11/pkcs11.conf.example.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/pki/ca-trust/extracted/pem/email-ca-bundle.pem.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/pki/ca-trust/extracted/pem/objsign-ca-bundle.pem.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/profile.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/profile.d/aliases.sh.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/profile.d/bash_profile.sh.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/profile.d/env.sh.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/profile.d/git-prompt.sh.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/profile.d/lang.sh.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/profile.d/perlbin.csh.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/profile.d/perlbin.sh.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/ssh/moduli.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/ssh/ssh_config.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/ssh/sshd_config.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/tigrc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/etc/vimrc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/bzcmp.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/bzdiff.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/bzegrep.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/bzfgrep.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/bzgrep.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/bzless.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/bzmore.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/gettext.sh.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/gettextize.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/gitk.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/sqlite3_analyzer.sh.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/bin/update-ca-trust.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/etc/gitattributes.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/etc/gitconfig.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/etc/pki/ca-trust/extracted/openssl/ca-bundle.trust.crt.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/etc/pki/ca-trust/extracted/pem/email-ca-bundle.pem.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/etc/pki/ca-trust/extracted/pem/objsign-ca-bundle.pem.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/dde1.4/pkgIndex.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/itcl4.1.0/itcl.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/itcl4.1.0/itclConfig.sh.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/itcl4.1.0/itclHullCmds.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/itcl4.1.0/itclWidget.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/itcl4.1.0/pkgIndex.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/p11-kit/p11-kit-extract-trust.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/reg1.3/pkgIndex.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/sqlite3.20.0/pkgIndex.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/auto.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/clock.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/ascii.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/big5.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp1250.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp1251.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp1252.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp1253.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp1254.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp1255.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp1256.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp1257.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp1258.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp437.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp737.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp775.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp850.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp852.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp855.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp857.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp860.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp861.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp862.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp863.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp864.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp865.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp866.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp869.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp874.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp932.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp936.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp949.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/cp950.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/dingbats.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/ebcdic.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/euc-cn.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/euc-jp.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/euc-kr.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/gb12345.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/gb1988.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/gb2312-raw.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/gb2312.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso2022-jp.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso2022-kr.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso2022.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-1.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-10.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-13.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-14.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-15.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-16.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-2.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-3.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-4.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-5.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-6.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-7.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-8.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/iso8859-9.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/jis0201.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/jis0208.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/jis0212.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/koi8-r.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/koi8-u.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/ksc5601.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macCentEuro.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macCroatian.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macCyrillic.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macDingbats.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macGreek.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macIceland.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macJapan.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macRoman.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macRomania.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macThai.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macTurkish.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/macUkraine.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/shiftjis.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/symbol.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/encoding/tis-620.enc.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/history.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/http1.0/http.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/http1.0/pkgIndex.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/init.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/af.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/af_za.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ar.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ar_in.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ar_jo.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ar_lb.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ar_sy.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/be.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/bg.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/bn.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/bn_in.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ca.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/cs.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/da.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/de.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/de_at.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/de_be.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/el.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_au.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_be.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_bw.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_ca.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_gb.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_hk.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_ie.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_in.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_nz.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_ph.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_sg.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_za.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/en_zw.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/eo.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_ar.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_bo.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_cl.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_co.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_cr.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_do.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_ec.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_gt.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_hn.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_mx.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_ni.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_pa.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_pe.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_pr.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_py.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_sv.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_uy.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/es_ve.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/et.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/eu.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/eu_es.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/fa.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/fa_in.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/fa_ir.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/fi.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/fo.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/fo_fo.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/fr.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/fr_be.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/fr_ca.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/fr_ch.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ga.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ga_ie.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/gl.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/gl_es.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/gv.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/gv_gb.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/he.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/hi.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/hi_in.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/hr.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/hu.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/id.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/id_id.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/is.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/it.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/it_ch.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ja.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/kl.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/kl_gl.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ko.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ko_kr.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/kok.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/kok_in.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/kw.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/kw_gb.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/lt.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/lv.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/mk.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/mr.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/mr_in.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ms.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ms_my.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/mt.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/nb.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/nl.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/nl_be.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/nn.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/pl.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/pt.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/pt_br.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ro.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ru.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ru_ua.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/sh.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/sk.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/sl.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/sq.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/sr.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/sv.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/sw.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ta.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/ta_in.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/te.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/te_in.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/th.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/tr.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/uk.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/vi.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/zh.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/zh_cn.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/zh_hk.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/zh_sg.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/msgs/zh_tw.msg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/opt0.4/optparse.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/opt0.4/pkgIndex.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/package.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/parray.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/safe.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tclIndex.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tm.tcl.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Abidjan.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Accra.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Addis_Ababa.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Algiers.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Asmara.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Asmera.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Bamako.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Bangui.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Banjul.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Bissau.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Blantyre.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Brazzaville.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Bujumbura.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Cairo.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Casablanca.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Ceuta.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Conakry.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Dakar.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Dar_es_Salaam.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Djibouti.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Douala.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/El_Aaiun.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Freetown.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Gaborone.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Harare.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Johannesburg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Juba.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Kampala.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Khartoum.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Kigali.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Kinshasa.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Lagos.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Libreville.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Lome.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Luanda.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Lubumbashi.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Lusaka.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Malabo.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Maputo.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Maseru.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Mbabane.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Mogadishu.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Monrovia.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Nairobi.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Ndjamena.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Niamey.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Nouakchott.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Ouagadougou.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Porto-Novo.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Sao_Tome.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Timbuktu.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Tripoli.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Tunis.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/Africa/Windhoek.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Adak.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Anchorage.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Anguilla.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Antigua.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Araguaina.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/Buenos_Aires.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/Catamarca.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/ComodRivadavia.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/Cordoba.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/Jujuy.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/La_Rioja.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/Mendoza.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/Rio_Gallegos.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/Salta.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/San_Juan.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/San_Luis.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/Tucuman.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Argentina/Ushuaia.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Aruba.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Asuncion.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Atikokan.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Atka.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Bahia.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Bahia_Banderas.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Barbados.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Belem.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Belize.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Blanc-Sablon.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Boa_Vista.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Bogota.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Boise.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Buenos_Aires.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Cambridge_Bay.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Campo_Grande.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Cancun.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Caracas.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Catamarca.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Cayenne.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Cayman.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Chicago.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Chihuahua.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Coral_Harbour.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Cordoba.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Costa_Rica.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Creston.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Cuiaba.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Curacao.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Danmarkshavn.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Dawson.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Dawson_Creek.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Denver.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Detroit.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Dominica.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Edmonton.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Eirunepe.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/El_Salvador.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Ensenada.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Fort_Nelson.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Fort_Wayne.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Fortaleza.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Glace_Bay.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Godthab.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Goose_Bay.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Grand_Turk.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Grenada.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Guadeloupe.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Guatemala.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Guayaquil.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Guyana.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Halifax.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Havana.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Hermosillo.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Indiana/Indianapolis.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Indiana/Knox.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Indiana/Marengo.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Indiana/Petersburg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Indiana/Tell_City.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Indiana/Vevay.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Indiana/Vincennes.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Indiana/Winamac.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Indianapolis.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Inuvik.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Iqaluit.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Jamaica.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Jujuy.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Juneau.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Kentucky/Louisville.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Kentucky/Monticello.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Knox_IN.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Kralendijk.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/La_Paz.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Lima.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Los_Angeles.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Louisville.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Lower_Princes.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Maceio.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Managua.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Manaus.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Marigot.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Martinique.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Matamoros.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Mazatlan.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Mendoza.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Menominee.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Merida.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Metlakatla.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Mexico_City.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Program Files/Git/mingw64/lib/tcl8.6/tzdata/America/Miquelon.
+The file will have its original line endings in your working directory.
+
+
+mkapoor@mkapoor-ltp MINGW64 / (master)
+$
+
+mkapoor@mkapoor-ltp MINGW64 / (master)
+$
+
+mkapoor@mkapoor-ltp MINGW64 / (master)
+$ pwd
+/
+
+mkapoor@mkapoor-ltp MINGW64 / (master)
+$ ls -l
+total 11892
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  8 14:47 bin/
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  8 14:45 cmd/
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  8 14:48 dev/
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  8 14:48 etc/
+-rwxr-xr-x 1 mkapoor 1049089  147608 Nov 30 00:37 git-bash.exe*
+-rwxr-xr-x 1 mkapoor 1049089  146584 Nov 30 00:37 git-cmd.exe*
+-rw-r--r-- 1 mkapoor 1049089   18765 Aug 31 12:29 LICENSE.txt
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  8 14:46 mingw64/
+dr-xr-xr-x 9 mkapoor 1049089       0 Jan  9 10:46 proc/
+-rw-r--r-- 1 mkapoor 1049089  117096 Nov 30 00:46 ReleaseNotes.html
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  9 10:45 tmp/
+-rw-r--r-- 1 mkapoor 1049089 1107388 Jan  8 14:47 unins000.dat
+-rwxr-xr-x 1 mkapoor 1049089 1289368 Jan  8 14:43 unins000.exe*
+-rw-r--r-- 1 mkapoor 1049089   22819 Jan  8 14:47 unins000.msg
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  8 14:47 usr/
+
+mkapoor@mkapoor-ltp MINGW64 / (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ../../$Recycle.Bin/
+        ../../.rnd
+        ../../BOOTNXT
+        ../../Intel/
+        ../../Program Files (x86)/
+        ../
+        ../../ProgramData/
+        ../../Recovery/
+        ../../Users/
+        ../../Windows/
+        ../../bootmgr
+        ../../hiberfil.sys
+        ../../pagefile.sys
+        ../../swapfile.sys
+        ../../system.sav/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mkapoor@mkapoor-ltp MINGW64 / (master)
+$ pwd
+/
+
+mkapoor@mkapoor-ltp MINGW64 / (master)
+$ cd C:
+
+mkapoor@mkapoor-ltp MINGW64 /c (master)
+$ ls
+'$Recycle.Bin'/   BOOTNXT      'Documents and Settings'@   Intel/      OneDriveTemp/   PerfLogs/        'Program Files (x86)'/   Recovery/     'System Volume Information'/   Users/
+ bootmgr          Config.Msi/   hiberfil.sys               MSOCache/   pagefile.sys   'Program Files'/   ProgramData/            swapfile.sys   system.sav/                   Windows/
+
+mkapoor@mkapoor-ltp MINGW64 /c (master)
+$ cd Users
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users (master)
+$ ls
+'All Users'@   Default/  'Default User'@   desktop.ini   hp/   mkapoor/   Public/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users (master)
+$ cd mkapoor
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ ls
+ AnacondaProjects/        Music/                                                                                         Pictures/
+ AppData/                'My Documents'@                                                                                 PrintHood@
+'Application Data'@       NetHood@                                                                                       Recent@
+ Contacts/                NTUSER.DAT                                                                                     Roaming/
+ Cookies@                 ntuser.dat.LOG1                                                                               'Saved Games'/
+ Desktop/                 ntuser.dat.LOG2                                                                                Searches/
+ Documents/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TM.blf                                        SendTo@
+ Downloads/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000001.regtrans-ms  'Start Menu'@
+ Favorites/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000002.regtrans-ms   Templates@
+ FileSystem/              ntuser.ini                                                                                     Tracing/
+ IntelGraphicsProfiles/   ntuser.pol                                                                                     Untitled.ipynb
+ Jmd/                     ODBA/                                                                                          Videos/
+ Learngit_monit/          OneDrive/                                                                                      Workingdirectory/
+ Links/                  'OneDrive - Laureate Education - APAC'/
+'Local Settings'@        'OneDrive - Laureate Education - APAC 1'/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ git add. Workingdirectory/
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ git add Workingdirectory
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ ls
+ AnacondaProjects/        Music/                                                                                         Pictures/
+ AppData/                'My Documents'@                                                                                 PrintHood@
+'Application Data'@       NetHood@                                                                                       Recent@
+ Contacts/                NTUSER.DAT                                                                                     Roaming/
+ Cookies@                 ntuser.dat.LOG1                                                                               'Saved Games'/
+ Desktop/                 ntuser.dat.LOG2                                                                                Searches/
+ Documents/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TM.blf                                        SendTo@
+ Downloads/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000001.regtrans-ms  'Start Menu'@
+ Favorites/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000002.regtrans-ms   Templates@
+ FileSystem/              ntuser.ini                                                                                     Tracing/
+ IntelGraphicsProfiles/   ntuser.pol                                                                                     Untitled.ipynb
+ Jmd/                     ODBA/                                                                                          Videos/
+ Learngit_monit/          OneDrive/                                                                                      Workingdirectory/
+ Links/                  'OneDrive - Laureate Education - APAC'/
+'Local Settings'@        'OneDrive - Laureate Education - APAC 1'/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ cd Workingdirectory/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git init
+Initialized empty Git repository in C:/Users/mkapoor/Workingdirectory/.git/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add sortingprogoflabs.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "commiting from working directory into repo1"
+[master (root-commit) b596786] commiting from working directory into repo1
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 79 insertions(+)
+ create mode 100644 sortingprogoflabs.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git remote add origin "https://github.com/MonitK/Repo1"
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 709 bytes | 709.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/MonitK/Repo1
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/mkapoor/Workingdirectory/.git/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add sortingprogoflabs.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git remote add origin "https://github.com/MonitK/Repo2"
+fatal: remote origin already exists.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git remote add origin "https://github.com/MonitK/Repo2"
+fatal: remote origin already exists.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "sending to Repo2"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git remote add origin "https://github.com/MonitK/Repo2"
+fatal: remote origin already exists.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ls
+sortingprogoflabs.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/mkapoor/Workingdirectory/.git/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "hello"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add remote origin1 "https://github.com/MonitK/repo3"
+fatal: pathspec 'remote' did not match any files
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git remote add origin2 "https://github.com/MonitK/repo3"
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push -u origin2 master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 709 bytes | 709.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/MonitK/repo3
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin2'.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git remote
+origin
+origin2
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git remote remove origin2
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git remote
+origin
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   sortingprogoflabs.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add sortingprogoflabs.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "Addded two comments for function calls which are not gcc compliant"
+[master 9bf8a26] Addded two comments for function calls which are not gcc compliant
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git remote
+origin
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 383 bytes | 383.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MonitK/Repo1
+   b596786..9bf8a26  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ touch gitignore
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ touch .gitignore
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add .gitignore
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        New Text Document.c
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add .git
+.git/       .gitignore
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add .gitignore
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        New Text Document.c
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "Commiting for gitignore"
+[master fbc8852] Commiting for gitignore
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 5 insertions(+)
+ create mode 100644 .gitignore
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 348 bytes | 348.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/MonitK/Repo1
+   9bf8a26..fbc8852  master -> master
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add .gitignore
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git comit -m "igone c files"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "igone c files"
+[master 9de2efc] igone c files
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ touch test.c
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ touch PTS
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ls
+ myfirst.c  'New Text Document.c'   PTS   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ cd sub
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory/sub (master)
+$ touch PTS
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory/sub (master)
+$ cd ..
+\
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ pwd
+/c/Users/mkapoor/Workingdirectory
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ls
+ myfirst.c  'New Text Document.c'   PTS   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        PTS
+        sub/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ls
+ myfirst.c  'New Text Document.c'   PTS   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        myfirst.c
+        sub/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/mkapoor/Workingdirectory/.git/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ls
+ myfirst.c  'New Text Document.c'   PTS   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .gitignore
+        new file:   myfirst.c
+        new file:   sub/PTS
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "commitimg after gitignore modiefied for positive regular expression and subfolder"
+[master 5f4ef8d] commitimg after gitignore modiefied for positive regular expression and subfolder
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 13 insertions(+), 2 deletions(-)
+ create mode 100644 myfirst.c
+ create mode 100644 sub/PTS
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push -u origin master
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 941 bytes | 470.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+To https://github.com/MonitK/Repo1
+   fbc8852..5f4ef8d  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git config --global -add core.excludefile~/.gitignore_global
+error: did you mean `--add` (with two dashes ?)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git config --global --add core.excludefile~/.gitignore_global
+error: wrong number of arguments
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git config --global --add core.excludesfile~/.gitignore_global
+error: wrong number of arguments
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git config --global --add core.excludesfile ~/.gitignore_global
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ cd ..
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ ls
+ AnacondaProjects/        Music/                                                                                         Pictures/
+ AppData/                'My Documents'@                                                                                 PrintHood@
+'Application Data'@       NetHood@                                                                                       Recent@
+ Contacts/                NTUSER.DAT                                                                                     Roaming/
+ Cookies@                 ntuser.dat.LOG1                                                                               'Saved Games'/
+ Desktop/                 ntuser.dat.LOG2                                                                                Searches/
+ Documents/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TM.blf                                        SendTo@
+ Downloads/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000001.regtrans-ms  'Start Menu'@
+ Favorites/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000002.regtrans-ms   Templates@
+ FileSystem/              ntuser.ini                                                                                     Tracing/
+ IntelGraphicsProfiles/   ntuser.pol                                                                                     Untitled.ipynb
+ Jmd/                     ODBA/                                                                                          Videos/
+ Learngit_monit/          OneDrive/                                                                                      WD1/
+ Links/                  'OneDrive - Laureate Education - APAC'/                                                         Workingdirectory/
+'Local Settings'@        'OneDrive - Laureate Education - APAC 1'/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ touch .gitignore_global
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ ls
+ AnacondaProjects/        Music/                                                                                         Pictures/
+ AppData/                'My Documents'@                                                                                 PrintHood@
+'Application Data'@       NetHood@                                                                                       Recent@
+ Contacts/                NTUSER.DAT                                                                                     Roaming/
+ Cookies@                 ntuser.dat.LOG1                                                                               'Saved Games'/
+ Desktop/                 ntuser.dat.LOG2                                                                                Searches/
+ Documents/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TM.blf                                        SendTo@
+ Downloads/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000001.regtrans-ms  'Start Menu'@
+ Favorites/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000002.regtrans-ms   Templates@
+ FileSystem/              ntuser.ini                                                                                     Tracing/
+ IntelGraphicsProfiles/   ntuser.pol                                                                                     Untitled.ipynb
+ Jmd/                     ODBA/                                                                                          Videos/
+ Learngit_monit/          OneDrive/                                                                                      WD1/
+ Links/                  'OneDrive - Laureate Education - APAC'/                                                         Workingdirectory/
+'Local Settings'@        'OneDrive - Laureate Education - APAC 1'/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ ls .
+ AnacondaProjects/        Music/                                                                                         Pictures/
+ AppData/                'My Documents'@                                                                                 PrintHood@
+'Application Data'@       NetHood@                                                                                       Recent@
+ Contacts/                NTUSER.DAT                                                                                     Roaming/
+ Cookies@                 ntuser.dat.LOG1                                                                               'Saved Games'/
+ Desktop/                 ntuser.dat.LOG2                                                                                Searches/
+ Documents/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TM.blf                                        SendTo@
+ Downloads/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000001.regtrans-ms  'Start Menu'@
+ Favorites/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000002.regtrans-ms   Templates@
+ FileSystem/              ntuser.ini                                                                                     Tracing/
+ IntelGraphicsProfiles/   ntuser.pol                                                                                     Untitled.ipynb
+ Jmd/                     ODBA/                                                                                          Videos/
+ Learngit_monit/          OneDrive/                                                                                      WD1/
+ Links/                  'OneDrive - Laureate Education - APAC'/                                                         Workingdirectory/
+'Local Settings'@        'OneDrive - Laureate Education - APAC 1'/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ vi .gitignore_global
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ ls
+ AnacondaProjects/        Music/                                                                                         Pictures/
+ AppData/                'My Documents'@                                                                                 PrintHood@
+'Application Data'@       NetHood@                                                                                       Recent@
+ Contacts/                NTUSER.DAT                                                                                     Roaming/
+ Cookies@                 ntuser.dat.LOG1                                                                               'Saved Games'/
+ Desktop/                 ntuser.dat.LOG2                                                                                Searches/
+ Documents/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TM.blf                                        SendTo@
+ Downloads/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000001.regtrans-ms  'Start Menu'@
+ Favorites/               NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000002.regtrans-ms   Templates@
+ FileSystem/              ntuser.ini                                                                                     Tracing/
+ IntelGraphicsProfiles/   ntuser.pol                                                                                     Untitled.ipynb
+ Jmd/                     ODBA/                                                                                          Videos/
+ Learngit_monit/          OneDrive/                                                                                      WD1/
+ Links/                  'OneDrive - Laureate Education - APAC'/                                                         Workingdirectory/
+'Local Settings'@        'OneDrive - Laureate Education - APAC 1'/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ cd ~
+
+mkapoor@mkapoor-ltp MINGW64 /x
+$ ls
+WINDOWS/
+
+mkapoor@mkapoor-ltp MINGW64 /x
+$ cd C:
+
+mkapoor@mkapoor-ltp MINGW64 /c (master)
+$ cd Users/mkapoor/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ cd Learngit_monit/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ touch mk
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ cd ..
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ cd Workingdirectory/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ touch mk
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ cd..
+bash: cd..: command not found
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ cd ..
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ cd Workingdirectory/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        mk
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "commitimng without mk - invoking global gitignore"
+[master 6b26536] commitimng without mk - invoking global gitignore
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 mk
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 288 bytes | 288.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MonitK/Repo1
+   5f4ef8d..6b26536  master -> master
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    mk
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        mk.kk
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git config --global
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git config --global -l
+core.excludesfile=X:/.gitignore_global
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ pwd
+/c/Users/mkapoor/Workingdirectory
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ cd ..
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ ls -ltrh
+total 12M
+drwxr-xr-x 1 mkapoor 1049089    0 Feb  5  2017  Roaming/
+-rw-r--r-- 1 mkapoor 1049089 408K Feb  9  2017  ntuser.dat.LOG2
+-rw-r--r-- 1 mkapoor 1049089 1.6M Feb  9  2017  ntuser.dat.LOG1
+lrwxrwxrwx 1 mkapoor 1049089   26 Feb  9  2017 'My Documents' -> /c/Users/mkapoor/Documents/
+lrwxrwxrwx 1 mkapoor 1049089   60 Feb  9  2017  Templates -> /c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Templates/
+lrwxrwxrwx 1 mkapoor 1049089   61 Feb  9  2017 'Start Menu' -> '/c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 mkapoor 1049089   57 Feb  9  2017  SendTo -> /c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 mkapoor 1049089   57 Feb  9  2017  Recent -> /c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Recent/
+lrwxrwxrwx 1 mkapoor 1049089   68 Feb  9  2017  PrintHood -> '/c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 mkapoor 1049089   68 Feb  9  2017  NetHood -> '/c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+lrwxrwxrwx 1 mkapoor 1049089   30 Feb  9  2017 'Local Settings' -> /c/Users/mkapoor/AppData/Local/
+lrwxrwxrwx 1 mkapoor 1049089   32 Feb  9  2017 'Application Data' -> /c/Users/mkapoor/AppData/Roaming/
+-rw-r--r-- 1 mkapoor 1049089   20 Feb  9  2017  ntuser.ini
+lrwxrwxrwx 1 mkapoor 1049089   60 Feb  9  2017  Cookies -> /c/Users/mkapoor/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 mkapoor 1049089    0 Feb  9  2017  AppData/
+-rw-r--r-- 1 mkapoor 1049089 512K Feb  9  2017  NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000002.regtrans-ms
+drwxr-xr-x 1 mkapoor 1049089    0 Jun  5  2017  Tracing/
+-rw-r--r-- 1 mkapoor 1049089 512K Jun  5  2017  NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 mkapoor 1049089  64K Jun  5  2017  NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TM.blf
+drwxr-xr-x 1 mkapoor 1049089    0 Jul 11 10:17  Contacts/
+drwxr-xr-x 1 mkapoor 1049089    0 Jul 11 10:17  Videos/
+drwxr-xr-x 1 mkapoor 1049089    0 Jul 11 10:17  Favorites/
+drwxr-xr-x 1 mkapoor 1049089    0 Jul 11 10:17  Searches/
+drwxr-xr-x 1 mkapoor 1049089    0 Jul 11 10:17 'Saved Games'/
+drwxr-xr-x 1 mkapoor 1049089    0 Aug 12 21:55  Pictures/
+drwxr-xr-x 1 mkapoor 1049089    0 Aug 28 09:42  ODBA/
+drwxr-xr-x 1 mkapoor 1049089    0 Oct 27 16:07  FileSystem/
+drwxr-xr-x 1 mkapoor 1049089    0 Nov 30 11:40  OneDrive/
+drwxr-xr-x 1 mkapoor 1049089    0 Dec 15 18:20  Music/
+drwxr-xr-x 1 mkapoor 1049089    0 Dec 29 18:03 'OneDrive - Laureate Education - APAC 1'/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  2 13:06  Documents/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  3 16:59  AnacondaProjects/
+-rw-r--r-- 1 mkapoor 1049089  612 Jan  4 10:32  Untitled.ipynb
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  8 14:37  Desktop/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  8 15:38  Jmd/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  8 16:02  Downloads/
+-rw-r--r-- 1 mkapoor 1049089 5.5M Jan  8 16:02  NTUSER.DAT
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 10:24  IntelGraphicsProfiles/
+-r--r--r-- 1 mkapoor 1049089 1.1K Jan  9 10:24  ntuser.pol
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 10:25 'OneDrive - Laureate Education - APAC'/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 10:25  Links/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 11:01  WD1/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 12:51  Learngit_monit/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 12:58  Workingdirectory/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ ls -ltr
+total 11769
+drwxr-xr-x 1 mkapoor 1049089       0 Feb  5  2017  Roaming/
+-rw-r--r-- 1 mkapoor 1049089  417792 Feb  9  2017  ntuser.dat.LOG2
+-rw-r--r-- 1 mkapoor 1049089 1675264 Feb  9  2017  ntuser.dat.LOG1
+lrwxrwxrwx 1 mkapoor 1049089      26 Feb  9  2017 'My Documents' -> /c/Users/mkapoor/Documents/
+lrwxrwxrwx 1 mkapoor 1049089      60 Feb  9  2017  Templates -> /c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Templates/
+lrwxrwxrwx 1 mkapoor 1049089      61 Feb  9  2017 'Start Menu' -> '/c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 mkapoor 1049089      57 Feb  9  2017  SendTo -> /c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 mkapoor 1049089      57 Feb  9  2017  Recent -> /c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Recent/
+lrwxrwxrwx 1 mkapoor 1049089      68 Feb  9  2017  PrintHood -> '/c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 mkapoor 1049089      68 Feb  9  2017  NetHood -> '/c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+lrwxrwxrwx 1 mkapoor 1049089      30 Feb  9  2017 'Local Settings' -> /c/Users/mkapoor/AppData/Local/
+lrwxrwxrwx 1 mkapoor 1049089      32 Feb  9  2017 'Application Data' -> /c/Users/mkapoor/AppData/Roaming/
+-rw-r--r-- 1 mkapoor 1049089      20 Feb  9  2017  ntuser.ini
+lrwxrwxrwx 1 mkapoor 1049089      60 Feb  9  2017  Cookies -> /c/Users/mkapoor/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 mkapoor 1049089       0 Feb  9  2017  AppData/
+-rw-r--r-- 1 mkapoor 1049089  524288 Feb  9  2017  NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000002.regtrans-ms
+drwxr-xr-x 1 mkapoor 1049089       0 Jun  5  2017  Tracing/
+-rw-r--r-- 1 mkapoor 1049089  524288 Jun  5  2017  NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 mkapoor 1049089   65536 Jun  5  2017  NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TM.blf
+drwxr-xr-x 1 mkapoor 1049089       0 Jul 11 10:17  Contacts/
+drwxr-xr-x 1 mkapoor 1049089       0 Jul 11 10:17  Videos/
+drwxr-xr-x 1 mkapoor 1049089       0 Jul 11 10:17  Favorites/
+drwxr-xr-x 1 mkapoor 1049089       0 Jul 11 10:17  Searches/
+drwxr-xr-x 1 mkapoor 1049089       0 Jul 11 10:17 'Saved Games'/
+drwxr-xr-x 1 mkapoor 1049089       0 Aug 12 21:55  Pictures/
+drwxr-xr-x 1 mkapoor 1049089       0 Aug 28 09:42  ODBA/
+drwxr-xr-x 1 mkapoor 1049089       0 Oct 27 16:07  FileSystem/
+drwxr-xr-x 1 mkapoor 1049089       0 Nov 30 11:40  OneDrive/
+drwxr-xr-x 1 mkapoor 1049089       0 Dec 15 18:20  Music/
+drwxr-xr-x 1 mkapoor 1049089       0 Dec 29 18:03 'OneDrive - Laureate Education - APAC 1'/
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  2 13:06  Documents/
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  3 16:59  AnacondaProjects/
+-rw-r--r-- 1 mkapoor 1049089     612 Jan  4 10:32  Untitled.ipynb
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  8 14:37  Desktop/
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  8 15:38  Jmd/
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  8 16:02  Downloads/
+-rw-r--r-- 1 mkapoor 1049089 5767168 Jan  8 16:02  NTUSER.DAT
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  9 10:24  IntelGraphicsProfiles/
+-r--r--r-- 1 mkapoor 1049089    1098 Jan  9 10:24  ntuser.pol
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  9 10:25 'OneDrive - Laureate Education - APAC'/
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  9 10:25  Links/
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  9 11:01  WD1/
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  9 12:51  Learngit_monit/
+drwxr-xr-x 1 mkapoor 1049089       0 Jan  9 12:58  Workingdirectory/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ ls -latrh
+total 12M
+drwxr-xr-x 1 mkapoor 1049089    0 Feb  5  2017  Roaming/
+-rw-r--r-- 1 mkapoor 1049089 408K Feb  9  2017  ntuser.dat.LOG2
+-rw-r--r-- 1 mkapoor 1049089 1.6M Feb  9  2017  ntuser.dat.LOG1
+lrwxrwxrwx 1 mkapoor 1049089   26 Feb  9  2017 'My Documents' -> /c/Users/mkapoor/Documents/
+lrwxrwxrwx 1 mkapoor 1049089   60 Feb  9  2017  Templates -> /c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Templates/
+lrwxrwxrwx 1 mkapoor 1049089   61 Feb  9  2017 'Start Menu' -> '/c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Start Menu'/
+lrwxrwxrwx 1 mkapoor 1049089   57 Feb  9  2017  SendTo -> /c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/SendTo/
+lrwxrwxrwx 1 mkapoor 1049089   57 Feb  9  2017  Recent -> /c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Recent/
+lrwxrwxrwx 1 mkapoor 1049089   68 Feb  9  2017  PrintHood -> '/c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Printer Shortcuts'/
+lrwxrwxrwx 1 mkapoor 1049089   68 Feb  9  2017  NetHood -> '/c/Users/mkapoor/AppData/Roaming/Microsoft/Windows/Network Shortcuts'/
+lrwxrwxrwx 1 mkapoor 1049089   30 Feb  9  2017 'Local Settings' -> /c/Users/mkapoor/AppData/Local/
+lrwxrwxrwx 1 mkapoor 1049089   32 Feb  9  2017 'Application Data' -> /c/Users/mkapoor/AppData/Roaming/
+-rw-r--r-- 1 mkapoor 1049089   20 Feb  9  2017  ntuser.ini
+lrwxrwxrwx 1 mkapoor 1049089   60 Feb  9  2017  Cookies -> /c/Users/mkapoor/AppData/Local/Microsoft/Windows/INetCookies/
+drwxr-xr-x 1 mkapoor 1049089    0 Feb  9  2017  AppData/
+-rw-r--r-- 1 mkapoor 1049089 512K Feb  9  2017  NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000002.regtrans-ms
+drwxr-xr-x 1 mkapoor 1049089    0 Jun  5  2017  Tracing/
+-rw-r--r-- 1 mkapoor 1049089 512K Jun  5  2017  NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000001.regtrans-ms
+-rw-r--r-- 1 mkapoor 1049089  64K Jun  5  2017  NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TM.blf
+drwxr-xr-x 1 mkapoor 1049089    0 Jul 11 10:17  Contacts/
+drwxr-xr-x 1 mkapoor 1049089    0 Jul 11 10:17  Videos/
+drwxr-xr-x 1 mkapoor 1049089    0 Jul 11 10:17  Favorites/
+drwxr-xr-x 1 mkapoor 1049089    0 Jul 11 10:17  Searches/
+drwxr-xr-x 1 mkapoor 1049089    0 Jul 11 10:17 'Saved Games'/
+drwxr-xr-x 1 mkapoor 1049089    0 Aug 12 21:55  Pictures/
+drwxr-xr-x 1 mkapoor 1049089    0 Aug 28 09:42  ODBA/
+drwxr-xr-x 1 mkapoor 1049089    0 Oct 27 16:07  FileSystem/
+drwxr-xr-x 1 mkapoor 1049089    0 Nov 30 11:40  OneDrive/
+drwxr-xr-x 1 mkapoor 1049089    0 Dec 14 15:36  ../
+drwxr-xr-x 1 mkapoor 1049089    0 Dec 15 18:20  Music/
+drwxr-xr-x 1 mkapoor 1049089    0 Dec 29 18:03 'OneDrive - Laureate Education - APAC 1'/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  2 13:06  Documents/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  2 13:07  .anaconda/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  2 13:10  .ipython/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  2 13:11  .matplotlib/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  3 16:59  AnacondaProjects/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  4 10:11  .jupyter/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  4 10:12  .ipynb_checkpoints/
+-rw-r--r-- 1 mkapoor 1049089  612 Jan  4 10:32  Untitled.ipynb
+-rw-r--r-- 1 mkapoor 1049089   43 Jan  5 10:13  .condarc
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  5 10:26  .spyder-py3/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  5 16:49  .conda/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  8 14:37  Desktop/
+-rw-r--r-- 1 mkapoor 1049089   54 Jan  8 14:55  .gitconfig
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  8 15:38  Jmd/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  8 16:02  Downloads/
+-rw-r--r-- 1 mkapoor 1049089  759 Jan  8 16:02  .bash_history
+-rw-r--r-- 1 mkapoor 1049089 5.5M Jan  8 16:02  NTUSER.DAT
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 10:24  IntelGraphicsProfiles/
+-r--r--r-- 1 mkapoor 1049089 1.1K Jan  9 10:24  ntuser.pol
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 10:25 'OneDrive - Laureate Education - APAC'/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 10:25  Links/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 10:48  .git/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 11:01  WD1/
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 12:48  ./
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 12:51  Learngit_monit/
+-rw-r--r-- 1 mkapoor 1049089   35 Jan  9 12:57  .gitignore_global
+drwxr-xr-x 1 mkapoor 1049089    0 Jan  9 12:58  Workingdirectory/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ pwd
+/c/Users/mkapoor
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ git config --global core.excludesfile /c/Users/mkapoor
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ git config --global core.excludesfile /c/Users/mkapoor/.gitignore_global
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ git config --global -l
+core.excludesfile=C:/Users/mkapoor/.gitignore_global
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ git status\
+> ^C
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Workingdirectory/sortingprogoflabs.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Workingdirectory/sortingprogoflabs.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .anaconda/
+        .bash_history
+        .condarc
+        .gitconfig
+        .gitignore_global
+        .ipynb_checkpoints/
+        .ipython/
+        .jupyter/
+        .matplotlib/
+        .spyder-py3/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        FileSystem/
+        IntelGraphicsProfiles/
+        Jmd/
+        Learngit_monit/
+        Links/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TM.blf
+        NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000002.regtrans-ms
+        ODBA/
+        OneDrive - Laureate Education - APAC 1/
+        OneDrive - Laureate Education - APAC/
+        OneDrive/
+        Pictures/
+        Saved Games/
+        Searches/
+        Tracing/
+        Untitled.ipynb
+        Videos/
+        Workingdirectory/.gitignore
+        Workingdirectory/myfirst.c
+        Workingdirectory/sub/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+        ntuser.pol
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ cd Workingdirectory/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    mk
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ cd ..
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ cd Learngit_monit/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/mkapoor/Learngit_monit/.git/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ ^C
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        hello.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ git commit -m " commiting with global ignore in action mk.* is excluded from WD"
+[master 33ffc61]  commiting with global ignore in action mk.* is excluded from WD
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ git push
+fatal: unable to access 'https://github.com/MonitK/Learngit_monit/': OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ git push -u origin master
+fatal: unable to access 'https://github.com/MonitK/Learngit_monit/': OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ git remote
+origin
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 354 bytes | 118.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MonitK/Learngit_monit
+   684bc90..33ffc61  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Learngit_monit (master)
+$ cd ..
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor (master)
+$ cd Workingdirectory/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/mkapoor/Workingdirectory/.git/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+        deleted:    mk
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        PTS
+        results.xlsx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "commiting with global gitignore setting"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+        modified:   .gitignore
+        deleted:    mk
+
+Untracked files:
+        PTS
+        results.xlsx
+
+no changes added to commit
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .gitignore
+        renamed:    mk -> PTS
+        new file:   results.xlsx
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "commiting with global gitignore setting"
+[master b807bf7] commiting with global gitignore setting
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 12 insertions(+), 11 deletions(-)
+ rewrite .gitignore (80%)
+ rename mk => PTS (100%)
+ create mode 100644 results.xlsx
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push -u origin master
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 5.87 KiB | 2.94 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/MonitK/Repo1
+   6b26536..b807bf7  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ls
+ mk.kk   myfirst.c  'New Text Document.c'   PTS   results.xlsx   sortingprogoflabs.txt   sub/   te
