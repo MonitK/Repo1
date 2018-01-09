@@ -7,6 +7,7 @@ int i,j,temp,a[25],n;
 main()
 {
 //clrscr();
+// clrscr is not used in GCC
 printf("\n\nEnter how many numbers you want to sort\n\n");
 scanf("%d",&n);
 printf("\nEnter the numbers \n");
@@ -19,6 +20,7 @@ printf("\n\nFinal sorted list is ");
 for (i=0;i<n;i++)
 printf("%d ",a[i]);
 //getch();
+//getch is not used in gcc
 }
 void bubble(int a[],int n)
 {
