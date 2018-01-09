@@ -1,11 +1,12 @@
-# ignore all cfiles #
+# ignore c files #
 *.c
 
 # ignore dat files #
 *.dat
 
-# do  not ignore myfirst.c #
-!myfirst.c
-
-# ignore only the PTS file in the current directory, not subdir/PTS #
-/PTS 
+#error i made while creating gitignore_global"#
+#mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)#
+#$ git config --global --add core.excludesfile ~/.gitignore_global#
+#~(tilde) symbol used above will create it at system root#
+#specific path of pwd needs to be given where we want to keep global config#
+# git config --global --add core.excludesfile C:/Users/mkapoor/.gitignore_global #
