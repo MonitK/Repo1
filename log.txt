@@ -1,4 +1,4 @@
- LPG Use case.uml
+        LPG Use case.uml
 
 nothing added to commit but untracked files present (use "git add" to track)
 
@@ -2416,4 +2416,1049 @@ Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
 $ ls
- mk.kk   myfirst.c  'New Text Document.c'   PTS   results.xlsx   sortingprogoflabs.txt   sub/   te
+ mk.kk   myfirst.c  'New Text Document.c'   PTS   results.xlsx   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ^C
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        log.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "with log
+> git commit -m "with log"
+> ^C
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "with log"
+[master 36fb7b5] with log
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2419 insertions(+)
+ create mode 100644 log.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 9.92 KiB | 1.98 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MonitK/Repo1
+   b807bf7..36fb7b5  master -> master
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ls
+ log.txt   mk.kk   myfirst.c  'New Text Document.c'   PTS   results.xlsx   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git diff sortingprogoflabs.txt
+diff --git a/sortingprogoflabs.txt b/sortingprogoflabs.txt
+index 65f3ea3..dc32ec7 100644
+--- a/sortingprogoflabs.txt
++++ b/sortingprogoflabs.txt
+@@ -1,4 +1,5 @@
+ /*BUBBLE SORT*/
++/*****/
+ __________________________________________________________________________
+ __________________________________________________________________________
+ #include<stdio.h>
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git diff sortingprogoflabs.txt > patch.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ cat sortingprogoflabs.txt
+/*BUBBLE SORT*/
+__________________________________________________________________________
+__________________________________________________________________________
+#include<stdio.h>
+void bubble(int a[],int n);
+int i,j,temp,a[25],n;
+main()
+{
+//clrscr();
+// clrscr is not used in GCC
+printf("\n\nEnter how many numbers you want to sort\n\n");
+scanf("%d",&n);
+printf("\nEnter the numbers \n");
+for (i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+bubble(a,n);
+printf("\n\nFinal sorted list is ");
+for (i=0;i<n;i++)
+printf("%d ",a[i]);
+//getch();
+//getch is not used in gcc
+}
+void bubble(int a[],int n)
+{
+         int k;
+        for(i=0;i<n-1;i++)
+        {
+        printf("\n\n PASS->%d ",i+1);
+        for(j=i+1;j<=n-1;j++)
+        {
+                if(a[i]>a[j])
+                {
+                        temp=a[i];
+                        a[i]=a[j];
+                        a[j]=temp;
+                }
+        }
+        for(k=0;k<n;k++)
+        printf("%d ",a[k]);
+        printf("\n");
+        }
+}
+
+[user1@gallery monit]$ ./a.out
+
+
+Enter how many numbers you want to sort
+
+7
+
+Enter the numbers
+1
+3
+2
+6
+4
+9
+6
+
+
+ PASS->1 1 3 2 6 4 9 6
+
+
+ PASS->2 1 2 3 6 4 9 6
+
+
+ PASS->3 1 2 3 6 4 9 6
+
+
+ PASS->4 1 2 3 4 6 9 6
+
+
+ PASS->5 1 2 3 4 6 9 6
+
+
+ PASS->6 1 2 3 4 6 6 9
+
+
+Final sorted list is 1 2 3 4 6 6 9 [user1@gallery monit]$
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git apply patch,txt
+error: can't open patch 'patch,txt': No such file or directory
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git apply patch.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   sortingprogoflabs.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        patch.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git diff sortingprogoflabs.txt
+diff --git a/sortingprogoflabs.txt b/sortingprogoflabs.txt
+index 65f3ea3..dc32ec7 100644
+--- a/sortingprogoflabs.txt
++++ b/sortingprogoflabs.txt
+@@ -1,4 +1,5 @@
+ /*BUBBLE SORT*/
++/*****/
+ __________________________________________________________________________
+ __________________________________________________________________________
+ #include<stdio.h>
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git diff --cached sortingprogoflabs.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   sortingprogoflabs.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        patch.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add sortingprogoflabs.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git diff --cached sortingprogoflabs.txt
+diff --git a/sortingprogoflabs.txt b/sortingprogoflabs.txt
+index 65f3ea3..dc32ec7 100644
+--- a/sortingprogoflabs.txt
++++ b/sortingprogoflabs.txt
+@@ -1,4 +1,5 @@
+ /*BUBBLE SORT*/
++/*****/
+ __________________________________________________________________________
+ __________________________________________________________________________
+ #include<stdio.h>
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   sortingprogoflabs.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        patch.txt
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -a -m "changedsometing"
+[master 67dd1df] changedsometing
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git rm PTS
+rm 'PTS'
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "after removing"
+[master 7b48a26] after removing
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 PTS
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 510 bytes | 255.00 KiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/MonitK/Repo1
+   36fb7b5..7b48a26  master -> master
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        patch.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    log.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        log1.txt
+        patch.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -a -m "renamedlog"
+[master 7b2ff87] renamedlog
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2419 deletions(-)
+ delete mode 100644 log.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 233 bytes | 46.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MonitK/Repo1
+   7b48a26..7b2ff87  master -> master
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        log1.txt
+        patch.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add .
+warning: LF will be replaced by CRLF in patch.txt.
+The file will have its original line endings in your working directory.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "renamedlog"
+[master f2138bc] renamedlog
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2429 insertions(+)
+ create mode 100644 log1.txt
+ create mode 100644 patch.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 10.10 KiB | 2.02 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MonitK/Repo1
+   7b2ff87..f2138bc  master -> master
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git mv log1.txt log.txt
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    log1.txt -> log.txt
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git commit -m "renamedlog"
+[master 41cede0] renamedlog
+ Committer: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename log1.txt => log.txt (100%)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git push
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 234 bytes | 234.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MonitK/Repo1
+   f2138bc..41cede0  master -> master
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log
+commit 41cede07352f36fe0378473a2d38633d955b172c (HEAD -> master, origin/master)
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:08:49 2018 +0530
+
+commit 41cede07352f36fe0378473a2d38633d955b172c (HEAD -> master, origin/master)
+    renamedlog
+
+commit f2138bc3712126c50e67a696b6c8f92566640548
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:04:25 2018 +0530
+
+    renamedlog
+
+commit 7b2ff87f2ace76dc64f3687b84b1f16013e73ee7
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:03:15 2018 +0530
+
+    renamedlog
+
+commit 7b48a26ab3cfbecf2ece3bf8caf7d1e54834ed98
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 14:59:19 2018 +0530
+
+    after removing
+
+commit 67dd1df1f1a5098b4c8926fe2137715577ec5b91
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 14:55:58 2018 +0530
+
+    changedsometing
+
+commit 36fb7b5dfd495bcb9f12708fac1c59486ad1353a
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 13:29:04 2018 +0530
+
+    with log
+
+commit b807bf7ab9252ff5e3a6cbf47e9e1ee865032aba
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 13:18:36 2018 +0530
+
+    commiting with global gitignore setting
+
+commit 6b265365fb49db9fce1241429e7d069847f8ea78
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 12:52:57 2018 +0530
+
+    commitimng without mk - invoking global gitignore
+
+commit 5f4ef8da08e29b9622dfee0dbdfbe9bacb2fa2cf
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+:
+
+^C
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log -n
+error: -n requires an argument
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log -n 2
+commit 41cede07352f36fe0378473a2d38633d955b172c (HEAD -> master, origin/master)
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:08:49 2018 +0530
+
+    renamedlog
+
+commit f2138bc3712126c50e67a696b6c8f92566640548
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:04:25 2018 +0530
+
+    renamedlog
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log -oneline
+fatal: unrecognized argument: -oneline
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --oneline
+41cede0 (HEAD -> master, origin/master) renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --stat
+commit 41cede07352f36fe0378473a2d38633d955b172c (HEAD -> master, origin/master)
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:08:49 2018 +0530
+
+    renamedlog
+
+ log1.txt => log.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit f2138bc3712126c50e67a696b6c8f92566640548
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:04:25 2018 +0530
+
+    renamedlog
+
+ log1.txt  | 2419 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ patch.txt |   10 +
+ 2 files changed, 2429 insertions(+)
+
+commit 7b2ff87f2ace76dc64f3687b84b1f16013e73ee7
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:03:15 2018 +0530
+
+    renamedlog
+
+ log.txt | 2419 ---------------------------------------------------------------
+ 1 file changed, 2419 deletions(-)
+
+commit 7b48a26ab3cfbecf2ece3bf8caf7d1e54834ed98
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 14:59:19 2018 +0530
+
+    after removing
+
+ PTS | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 67dd1df1f1a5098b4c8926fe2137715577ec5b91
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 14:55:58 2018 +0530
+
+    changedsometing
+
+ sortingprogoflabs.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 36fb7b5dfd495bcb9f12708fac1c59486ad1353a
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 13:29:04 2018 +0530
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --stat
+commit 41cede07352f36fe0378473a2d38633d955b172c (HEAD -> master, origin/master)
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:08:49 2018 +0530
+
+    renamedlog
+
+ log1.txt => log.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit f2138bc3712126c50e67a696b6c8f92566640548
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:04:25 2018 +0530
+
+    renamedlog
+
+ log1.txt  | 2419 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ patch.txt |   10 +
+ 2 files changed, 2429 insertions(+)
+
+commit 7b2ff87f2ace76dc64f3687b84b1f16013e73ee7
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:03:15 2018 +0530
+
+    renamedlog
+
+ log.txt | 2419 ---------------------------------------------------------------
+ 1 file changed, 2419 deletions(-)
+
+commit 7b48a26ab3cfbecf2ece3bf8caf7d1e54834ed98
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 14:59:19 2018 +0530
+
+    after removing
+
+ PTS | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 67dd1df1f1a5098b4c8926fe2137715577ec5b91
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 14:55:58 2018 +0530
+
+    changedsometing
+
+ sortingprogoflabs.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 36fb7b5dfd495bcb9f12708fac1c59486ad1353a
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 13:29:04 2018 +0530
+
+    with log
+
+ log.txt | 2419 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 2419 insertions(+)
+
+commit b807bf7ab9252ff5e3a6cbf47e9e1ee865032aba
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 13:18:36 2018 +0530
+
+    commiting with global gitignore setting
+
+ .gitignore   |  13 +++++++------
+ mk => PTS    |   0
+ results.xlsx | Bin 0 -> 7682 bytes
+ 3 files changed, 7 insertions(+), 6 deletions(-)
+
+commit 6b265365fb49db9fce1241429e7d069847f8ea78
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 12:52:57 2018 +0530
+
+    commitimng without mk - invoking global gitignore
+
+ mk | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 5f4ef8da08e29b9622dfee0dbdfbe9bacb2fa2cf
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 12:40:48 2018 +0530
+
+    commitimg after gitignore modiefied for positive regular expression and subfolder
+
+ .gitignore | 10 ++++++++--
+ myfirst.c  |  5 +++++
+ sub/PTS    |  0
+ 3 files changed, 13 insertions(+), 2 deletions(-)
+
+commit 9de2efc49816f851fa605040897ff0e463c81ec4
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 12:16:13 2018 +0530
+
+    igone c files
+
+ .gitignore | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit fbc8852b81922f29164ffe0078c1fbd53d180f13
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 12:11:52 2018 +0530
+
+    Commiting for gitignore
+
+ .gitignore | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit 9bf8a269a77d78d3202734ee6cfc6038d4e371ba
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 11:58:59 2018 +0530
+
+    Addded two comments for function calls which are not gcc compliant
+
+ sortingprogoflabs.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit b59678686d4ddb706e5d916bd609f3555ebfc833
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 10:51:22 2018 +0530
+
+    commiting from working directory into repo1
+
+ sortingprogoflabs.txt | 79 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 79 insertions(+)
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --p
+fatal: unrecognized argument: --p
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log -p
+commit 41cede07352f36fe0378473a2d38633d955b172c (HEAD -> master, origin/master)
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:08:49 2018 +0530
+
+    renamedlog
+
+diff --git a/log1.txt b/log.txt
+similarity index 100%
+rename from log1.txt
+rename to log.txt
+
+commit f2138bc3712126c50e67a696b6c8f92566640548
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:04:25 2018 +0530
+
+    renamedlog
+
+diff --git a/log1.txt b/log1.txt
+new file mode 100644
+index 0000000..c9fb4f7
+--- /dev/null
++++ b/log1.txt
+@@ -0,0 +1,2419 @@
++ LPG Use case.uml
++
++nothing added to commit but untracked files present (use "git add" to track)
++
++mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
++$ git commit -m "first version"
++On branch master
++
++Initial commit
++
++Untracked files:
++        LPG Use case.uml
++
++nothing added to commit but untracked files present
++
++mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
++$ git remote add origin "https://github.com/MonitK/9-Jan1.1"
++
++mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
++$ git push -u origin master
++error: src refspec master does not match any.
++error: failed to push some refs to 'https://github.com/MonitK/9-Jan1.1'
++
++mkapoor@mkapoor-ltp MINGW64 /d/UML/LPG Use case1 (master)
++$ git commit -m "first version"
++On branch master
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --pretty=format:"h - "an"
+> ^C
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ^C
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --pretty=format:"%h - %an, %ar : %s"
+41cede0 - Monit Kapoor, 13 minutes ago : renamedlog
+f2138bc - Monit Kapoor, 17 minutes ago : renamedlog
+7b2ff87 - Monit Kapoor, 18 minutes ago : renamedlog
+7b48a26 - Monit Kapoor, 22 minutes ago : after removing
+67dd1df - Monit Kapoor, 25 minutes ago : changedsometing
+36fb7b5 - Monit Kapoor, 2 hours ago : with log
+b807bf7 - Monit Kapoor, 2 hours ago : commiting with global gitignore setting
+6b26536 - Monit Kapoor, 2 hours ago : commitimng without mk - invoking global gitignore
+5f4ef8d - Monit Kapoor, 3 hours ago : commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc - Monit Kapoor, 3 hours ago : igone c files
+fbc8852 - Monit Kapoor, 3 hours ago : Commiting for gitignore
+9bf8a26 - Monit Kapoor, 3 hours ago : Addded two comments for function calls which are not gcc compliant
+b596786 - Monit Kapoor, 5 hours ago : commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ vi log.sh
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ./log.sh
+./log.sh: line 1: log: command not found
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ chmod +x log.sh
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ./log.sh
+./log.sh: line 1: log: command not found
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ vi log.bat
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ log
+bash: log: command not found
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ log.bat
+bash: log.bat: command not found
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ cat log.bat
+git log --stat
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ chmod
+chmod: missing operand
+Try 'chmod --help' for more information.
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ chmod +x log.bat
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ls -l
+total 158
+-rw-r--r-- 1 mkapoor 1049089     15 Jan  9 15:25  log.bat
+-rw-r--r-- 1 mkapoor 1049089      7 Jan  9 15:23  log.sh
+-rw-r--r-- 1 mkapoor 1049089 141024 Jan  9 13:28  log.txt
+-rw-r--r-- 1 mkapoor 1049089     20 Jan  9 12:58  mk.kk
+-rw-r--r-- 1 mkapoor 1049089     55 Jan  9 12:35  myfirst.c
+-rw-r--r-- 1 mkapoor 1049089     31 Jan  9 12:10 'New Text Document.c'
+-rw-r--r-- 1 mkapoor 1049089    358 Jan  9 14:38  patch.txt
+-rw-r--r-- 1 mkapoor 1049089   7682 Jan  9 13:16  results.xlsx
+-rw-r--r-- 1 mkapoor 1049089   1400 Jan  9 14:40  sortingprogoflabs.txt
+drwxr-xr-x 1 mkapoor 1049089      0 Jan  9 12:36  sub/
+-rw-r--r-- 1 mkapoor 1049089      0 Jan  9 12:16  test.c
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ chmod 777 log.sh
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ls -l
+total 158
+-rw-r--r-- 1 mkapoor 1049089     15 Jan  9 15:25  log.bat
+-rw-r--r-- 1 mkapoor 1049089      7 Jan  9 15:23  log.sh
+-rw-r--r-- 1 mkapoor 1049089 141024 Jan  9 13:28  log.txt
+-rw-r--r-- 1 mkapoor 1049089     20 Jan  9 12:58  mk.kk
+-rw-r--r-- 1 mkapoor 1049089     55 Jan  9 12:35  myfirst.c
+-rw-r--r-- 1 mkapoor 1049089     31 Jan  9 12:10 'New Text Document.c'
+-rw-r--r-- 1 mkapoor 1049089    358 Jan  9 14:38  patch.txt
+-rw-r--r-- 1 mkapoor 1049089   7682 Jan  9 13:16  results.xlsx
+-rw-r--r-- 1 mkapoor 1049089   1400 Jan  9 14:40  sortingprogoflabs.txt
+drwxr-xr-x 1 mkapoor 1049089      0 Jan  9 12:36  sub/
+-rw-r--r-- 1 mkapoor 1049089      0 Jan  9 12:16  test.c
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ./log.sh
+./log.sh: line 1: log: command not found
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ vi lpog.sh
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ vi log.sh
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ ./log.sh
+commit 41cede07352f36fe0378473a2d38633d955b172c (HEAD -> master, origin/master)
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:08:49 2018 +0530
+
+    renamedlog
+
+commit f2138bc3712126c50e67a696b6c8f92566640548
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:04:25 2018 +0530
+
+    renamedlog
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --since="2018-9-1"
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --since="2018-1-9"
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --since=2018-1-9
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --since=2018-9-1
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --since=1.weeks
+commit 41cede07352f36fe0378473a2d38633d955b172c (HEAD -> master, origin/master)
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:08:49 2018 +0530
+
+    renamedlog
+
+commit f2138bc3712126c50e67a696b6c8f92566640548
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:04:25 2018 +0530
+
+    renamedlog
+
+commit 7b2ff87f2ace76dc64f3687b84b1f16013e73ee7
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 15:03:15 2018 +0530
+
+    renamedlog
+
+commit 7b48a26ab3cfbecf2ece3bf8caf7d1e54834ed98
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 14:59:19 2018 +0530
+
+    after removing
+
+commit 67dd1df1f1a5098b4c8926fe2137715577ec5b91
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 14:55:58 2018 +0530
+
+    changedsometing
+
+commit 36fb7b5dfd495bcb9f12708fac1c59486ad1353a
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 13:29:04 2018 +0530
+
+    with log
+
+commit b807bf7ab9252ff5e3a6cbf47e9e1ee865032aba
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 13:18:36 2018 +0530
+
+    commiting with global gitignore setting
+
+commit 6b265365fb49db9fce1241429e7d069847f8ea78
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 12:52:57 2018 +0530
+
+    commitimng without mk - invoking global gitignore
+
+commit 5f4ef8da08e29b9622dfee0dbdfbe9bacb2fa2cf
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 12:40:48 2018 +0530
+
+    commitimg after gitignore modiefied for positive regular expression and subfolder
+
+commit 9de2efc49816f851fa605040897ff0e463c81ec4
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 12:16:13 2018 +0530
+
+    igone c files
+
+commit fbc8852b81922f29164ffe0078c1fbd53d180f13
+Author: Monit Kapoor <mkapoor@DDN.UPES.AC.IN>
+Date:   Tue Jan 9 12:11:52 2018 +0530
+
+    Commiting for gitignore
+
+commit 9bf8a269a77d78d3202734ee6cfc6038d4e371ba
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --pretty=format:"h - "an" --since="1 days ago"
+> ^C
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --pretty=format:"h - "an" --since="1 days ago"
+>
+>
+> "
+fatal: ambiguous argument 'days': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --pretty=format:"%h - "%an" --since="1 days ago"
+>
+> "
+fatal: ambiguous argument 'days': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --prettyformat:"%h" %an" --since="2 days ago"
+> git log --prettyformat:"%h  %an" --since="2 days ago"
+> ^C
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --prettyformat:"%h" %an" --since="2 days ago"
+git log --prettyformat:"%h  %an" --since="2 days ago"^C
+
+
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --prettyformat:"%h  %an" --since="2 days ago"
+fatal: unrecognized argument: --prettyformat:%h  %an
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$ git log --pretty=format:"%h  %an" --since="2 days ago"
+41cede0  Monit Kapoor
+f2138bc  Monit Kapoor
+7b2ff87  Monit Kapoor
+7b48a26  Monit Kapoor
+67dd1df  Monit Kapoor
+36fb7b5  Monit Kapoor
+b807bf7  Monit Kapoor
+6b26536  Monit Kapoor
+5f4ef8d  Monit Kapoor
+9de2efc  Monit Kapoor
+fbc8852  Monit Kapoor
+9bf8a26  Monit Kapoor
+b596786  Monit Kapoor
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users/mkapoor/Workingdirectory (master)
+$
