@@ -1,5 +1,5 @@
 # ignore c files #
-*.c
+*.cpp
 
 # ignore dat files #
 *.dat
