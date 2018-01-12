@@ -1,0 +1,1849 @@
+
+mkapoor@mkapoor-ltp MINGW64 ~ (master)
+$ cd C:
+
+mkapoor@mkapoor-ltp MINGW64 /c (master)
+$ ls
+'$Recycle.Bin'/             MSOCache/               Recovery/
+ bootmgr                    OneDriveTemp/           swapfile.sys
+ BOOTNXT                    pagefile.sys           'System Volume Information'/
+ Config.Msi/                PerfLogs/               system.sav/
+'Documents and Settings'@  'Program Files'/         Users/
+ hiberfil.sys              'Program Files (x86)'/   Windows/
+ Intel/                     ProgramData/
+
+mkapoor@mkapoor-ltp MINGW64 /c (master)
+$ cd Users/
+
+mkapoor@mkapoor-ltp MINGW64 /c/Users (master)
+$ cd mkapoor/Workingdirectory/
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ ls
+ log.bat   mk.kk                  patch.txt               sub/
+ log.sh    myfirst.c              results.xlsx            test.c
+ log.txt  'New Text Document.c'   sortingprogoflabs.txt
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ vi myfirst.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   log.txt
+        modified:   myfirst.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        log.bat
+        log.sh
+        mk.kk
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git add .
+warning: LF will be replaced by CRLF in log.bat.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in log.sh.
+The file will have its original line endings in your working directory.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git commit -m "Commitimg for testing reset"
+[master 6f2a99d] Commitimg for testing reset
+ 5 files changed, 1052 insertions(+), 3 deletions(-)
+ create mode 100644 log.bat
+ create mode 100644 log.sh
+ create mode 100644 mk.kk
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git push
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (7/7), 4.50 KiB | 1.13 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MonitK/Repo1
+   41cede0..6f2a99d  master -> master
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ vi myfirst.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   myfirst.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git stage
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git stage .
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   myfirst.c
+
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git reset
+Unstaged changes after reset:
+M       myfirst.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   myfirst.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline
+6f2a99d (HEAD -> master, origin/master) Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git commit -m "Commiting to reset later"
+[master a389591] Commiting to reset later
+ 1 file changed, 1 insertion(+)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline
+a389591 (HEAD -> master) Commiting to reset later
+6f2a99d (origin/master) Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git reset --hard
+HEAD is now at a389591 Commiting to reset later
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline
+a389591 (HEAD -> master) Commiting to reset later
+6f2a99d (origin/master) Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git reset --hard <6f2a99d >
+bash: syntax error near unexpected token `newline'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git reset --hard 6f2a99d
+HEAD is now at 6f2a99d Commitimg for testing reset
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline
+6f2a99d (HEAD -> master, origin/master) Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   patch.txt   results.xlsx   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ vi log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   log.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git add .
+warning: LF will be replaced by CRLF in log.sh.
+The file will have its original line endings in your working directory.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git commit -m "Commiting for Bug01"
+[master 44a032e] Commiting for Bug01
+ 1 file changed, 1 insertion(+)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline
+44a032e (HEAD -> master) Commiting for Bug01
+6f2a99d (origin/master) Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ vi log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git add .
+\warning: LF will be replaced by CRLF in log.sh.
+The file will have its original line endings in your working directory.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git commit -m "Commiting for Bug2"
+[master 5bfd8f4] Commiting for Bug2
+ 1 file changed, 1 insertion(+)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline
+5bfd8f4 (HEAD -> master) Commiting for Bug2
+44a032e Commiting for Bug01
+6f2a99d (origin/master) Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git revert 44a032e
+error: could not revert 44a032e... Commiting for Bug01
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master|REVERTING)
+$ git log --oneline
+5bfd8f4 (HEAD -> master) Commiting for Bug2
+44a032e Commiting for Bug01
+6f2a99d (origin/master) Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master|REVERTING)
+$ vi log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master|REVERTING)
+$ git revert --continue
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master|REVERTING)
+$ vi log.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master|REVERTING)
+$ vi log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master|REVERTING)
+$ git revert --continue
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+U       log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master|REVERTING)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+You are currently reverting commit 44a032e.
+  (fix conflicts and run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+Unmerged paths:
+  (use "git reset HEAD <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   log.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master|REVERTING)
+$ git add log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master|REVERTING)
+$ git revert --continue
+[master 9eb6757] Revert "Commiting for Bug01"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline
+9eb6757 (HEAD -> master) Revert "Commiting for Bug01"
+5bfd8f4 Commiting for Bug2
+44a032e Commiting for Bug01
+6f2a99d (origin/master) Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git push
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 875 bytes | 437.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/MonitK/Repo1
+   6f2a99d..9eb6757  master -> master
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline
+9eb6757 (HEAD -> master, origin/master) Revert "Commiting for Bug01"
+5bfd8f4 Commiting for Bug2
+44a032e Commiting for Bug01
+6f2a99d Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout -b f01
+Switched to a new branch 'f01'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git log --oneline
+9eb6757 (HEAD -> f01, origin/master, master) Revert "Commiting for Bug01"
+5bfd8f4 Commiting for Bug2
+44a032e Commiting for Bug01
+6f2a99d Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ vi scond.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git commit -m "commiting  second.c on f01 branch"
+On branch f01
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git status
+On branch f01
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git status
+On branch f01
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        New Text Document.c
+        scond.c
+        test.c
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git add .
+warning: LF will be replaced by CRLF in scond.c.
+The file will have its original line endings in your working directory.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git commit -m "commiting  second.c on f01 branch"
+[f01 e84b2b2] commiting  second.c on f01 branch
+ 4 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 New Text Document.c
+ create mode 100644 scond.c
+ create mode 100644 test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git log --oneline
+e84b2b2 (HEAD -> f01) commiting  second.c on f01 branch
+9eb6757 (origin/master, master) Revert "Commiting for Bug01"
+5bfd8f4 Commiting for Bug2
+44a032e Commiting for Bug01
+6f2a99d Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline
+9eb6757 (HEAD -> master, origin/master) Revert "Commiting for Bug01"
+5bfd8f4 Commiting for Bug2
+44a032e Commiting for Bug01
+6f2a99d Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git clone https://github.com/ravitomar7/om.git
+Cloning into 'om'...
+remote: Counting objects: 42, done.
+remote: Compressing objects: 100% (25/25), done.
+remote: Total 42 (delta 16), reused 37 (delta 11), pack-reused 0
+Unpacking objects: 100% (42/42), done.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ cd om
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory/om (master)
+$ git branch
+* master
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory/om (master)
+$ git fetch
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/ravitomar7/om
+ * [new branch]      Anushree_Maam -> origin/Anushree_Maam
+ * [new branch]      Hitesh_Sir    -> origin/Hitesh_Sir
+ * [new branch]      Kalpna_Maam   -> origin/Kalpna_Maam
+ * [new branch]      Monit_Sir     -> origin/Monit_Sir
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory/om (master)
+$ git checkout Monit_Sir
+Switched to a new branch 'Monit_Sir'
+Branch 'Monit_Sir' set up to track remote branch 'Monit_Sir' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory/om (Monit_Sir)
+$ vi menu.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory/om (Monit_Sir)
+$ git add .
+warning: LF will be replaced by CRLF in menu.c.
+The file will have its original line endings in your working directory.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory/om (Monit_Sir)
+$ git commit -m "Menu.c commiting"
+[Monit_Sir 7085893] Menu.c commiting
+ 1 file changed, 5 insertions(+)
+ create mode 100644 menu.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory/om (Monit_Sir)
+$ git push
+remote: Permission to ravitomar7/om.git denied to MonitK.
+fatal: unable to access 'https://github.com/ravitomar7/om.git/': The requested URL returned error: 403
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory/om (Monit_Sir)
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 326 bytes | 326.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ravitomar7/om.git
+   a7ae748..7085893  Monit_Sir -> Monit_Sir
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory/om (Monit_Sir)
+$ git ls-remote
+From https://github.com/ravitomar7/om.git
+23f821b3104de211673efc0c1be6622dc41b5629        HEAD
+a7ae74800324a6445cbc68703017d8ba370e0566        refs/heads/Anushree_Maam
+a7ae74800324a6445cbc68703017d8ba370e0566        refs/heads/Hitesh_Sir
+a7ae74800324a6445cbc68703017d8ba370e0566        refs/heads/Kalpna_Maam
+7085893d615594cae1384efeaa7ef6440e9b6906        refs/heads/Monit_Sir
+23f821b3104de211673efc0c1be6622dc41b5629        refs/heads/master
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory/om (Monit_Sir)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory/om (master)
+$ cd ..
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ ls
+log.bat  log.sh  log.txt  mk.kk  myfirst.c  om/  patch.txt  results.xlsx  sortingprogoflabs.txt  sub/
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git branch
+  f01
+* master
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout f01
+Switched to branch 'f01'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   om/   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ vi scond.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   om/   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        scond.c
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git add .
+warning: adding embedded git repository: om
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> om
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached om
+hint:
+hint: See "git help submodule" for more information.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git add scond.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   om/   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        scond.c
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git commit -m "Commit scond.c"
+[f01 4d809c9] Commit scond.c
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+ create mode 160000 om
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f01)
+$ git checkout master
+warning: unable to rmdir 'om': Directory not empty
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ rmdir om\
+>
+rmdir: failed to remove 'om': Directory not empty
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ rmdir om
+rmdir: failed to remove 'om': Directory not empty
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ rmdir -r om
+rmdir: unknown option -- r
+Try 'rmdir --help' for more information.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ rmdir --r om
+rmdir: unknown option -- r
+Try 'rmdir --help' for more information.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ ls
+log.bat  log.sh  log.txt  mk.kk  myfirst.c  patch.txt  results.xlsx  sortingprogoflabs.txt  sub/
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout -b f02
+Switched to a new branch 'f02'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f02)
+$ touch third.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f02)
+$ vi third.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f02)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f02)
+$ git commit -m "imitial commiting third.c in f02"
+On branch f02
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f02)
+$ gitk
+
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f02)
+$ git branch
+  f01
+* f02
+  master
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f02)
+$ git log --oneline --graph -all
+fatal: unrecognized argument: -all
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f02)
+$ git log --oneline --graph --all
+* 4d809c9 (f01) Commit scond.c
+* e84b2b2 commiting  second.c on f01 branch
+* 9eb6757 (HEAD -> f02, origin/master, master) Revert "Commiting for Bug01"
+* 5bfd8f4 Commiting for Bug2
+* 44a032e Commiting for Bug01
+* 6f2a99d Commitimg for testing reset
+* 41cede0 renamedlog
+* f2138bc renamedlog
+* 7b2ff87 renamedlog
+* 7b48a26 after removing
+* 67dd1df changedsometing
+* 36fb7b5 with log
+* b807bf7 commiting with global gitignore setting
+* 6b26536 commitimng without mk - invoking global gitignore
+* 5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+* 9de2efc igone c files
+* fbc8852 Commiting for gitignore
+* 9bf8a26 Addded two comments for function calls which are not gcc compliant
+* b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (f02)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline --graph --all
+* 4d809c9 (f01) Commit scond.c
+* e84b2b2 commiting  second.c on f01 branch
+* 9eb6757 (HEAD -> master, origin/master, f02) Revert "Commiting for Bug01"
+* 5bfd8f4 Commiting for Bug2
+* 44a032e Commiting for Bug01
+* 6f2a99d Commitimg for testing reset
+* 41cede0 renamedlog
+* f2138bc renamedlog
+* 7b2ff87 renamedlog
+* 7b48a26 after removing
+* 67dd1df changedsometing
+* 36fb7b5 with log
+* b807bf7 commiting with global gitignore setting
+* 6b26536 commitimng without mk - invoking global gitignore
+* 5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+* 9de2efc igone c files
+* fbc8852 Commiting for gitignore
+* 9bf8a26 Addded two comments for function calls which are not gcc compliant
+* b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ gitk
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git merge f01
+Updating 9eb6757..4d809c9
+Fast-forward
+ .gitignore          | 2 +-
+ New Text Document.c | 1 +
+ om                  | 1 +
+ scond.c             | 5 +++++
+ test.c              | 0
+ 5 files changed, 8 insertions(+), 1 deletion(-)
+ create mode 100644 New Text Document.c
+ create mode 160000 om
+ create mode 100644 scond.c
+ create mode 100644 test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git merge f02
+Already up to date.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git branch -d f01
+Deleted branch f01 (was 4d809c9).
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git branch -d f02
+Deleted branch f02 (was 9eb6757).
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout -b F001
+Switched to a new branch 'F001'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ vi prog1.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   om/   patch.txt   prog1.c   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c   third.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ vi test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ git add .
+warning: LF will be replaced by CRLF in test.c.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in prog1.c.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in third.c.
+The file will have its original line endings in your working directory.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ git commit -m "Initial commit for test.c on F001"
+[F001 61482a0] Initial commit for test.c on F001
+ 3 files changed, 7 insertions(+)
+ create mode 100644 prog1.c
+ create mode 100644 third.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout -b F002
+Switched to a new branch 'F002'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F002)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   om/   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F002)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git branch -D
+fatal: branch name required
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git branch -D F001
+Deleted branch F001 (was 61482a0).
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git branch -D F002
+Deleted branch F002 (was 4d809c9).
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout -b F001
+Switched to a new branch 'F001'
+D       om
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ git checkout master
+Switched to branch 'master'
+D       om
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout -b F002
+Switched to a new branch 'F002'
+D       om
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F002)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F002)
+$ vi test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F002)
+$ git add .
+warning: LF will be replaced by CRLF in test.c.
+The file will have its original line endings in your working directory.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F002)
+$ git commit -m "Initial commit for test.c on F002"
+[F002 3701a4d] Initial commit for test.c on F002
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ delete mode 160000 om
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F002)
+$ git checkout F001
+Switched to branch 'F001'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   om/   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ vi scond.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ git commit -m "Initial commit for scond.c on F001"
+[F001 5948912] Initial commit for scond.c on F001
+ 1 file changed, 1 insertion(+)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F001)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline --graph --all
+* 5948912 (F001) Initial commit for scond.c on F001
+| * 3701a4d (F002) Initial commit for test.c on F002
+|/
+* 4d809c9 (HEAD -> master) Commit scond.c
+* e84b2b2 commiting  second.c on f01 branch
+* 9eb6757 (origin/master) Revert "Commiting for Bug01"
+* 5bfd8f4 Commiting for Bug2
+* 44a032e Commiting for Bug01
+* 6f2a99d Commitimg for testing reset
+* 41cede0 renamedlog
+* f2138bc renamedlog
+* 7b2ff87 renamedlog
+* 7b48a26 after removing
+* 67dd1df changedsometing
+* 36fb7b5 with log
+* b807bf7 commiting with global gitignore setting
+* 6b26536 commitimng without mk - invoking global gitignore
+* 5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+* 9de2efc igone c files
+* fbc8852 Commiting for gitignore
+* 9bf8a26 Addded two comments for function calls which are not gcc compliant
+* b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ gitk
+
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git merge F001
+Updating 4d809c9..5948912
+Fast-forward
+ scond.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git merge F002
+Removing om
+Merge made by the 'recursive' strategy.
+ om     | 1 -
+ test.c | 1 +
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+ delete mode 160000 om
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline --graph --all
+*   6943029 (HEAD -> master) Merge branch 'F002'
+|\
+| * 3701a4d (F002) Initial commit for test.c on F002
+* | 5948912 (F001) Initial commit for scond.c on F001
+|/
+* 4d809c9 Commit scond.c
+* e84b2b2 commiting  second.c on f01 branch
+* 9eb6757 (origin/master) Revert "Commiting for Bug01"
+* 5bfd8f4 Commiting for Bug2
+* 44a032e Commiting for Bug01
+* 6f2a99d Commitimg for testing reset
+* 41cede0 renamedlog
+* f2138bc renamedlog
+* 7b2ff87 renamedlog
+* 7b48a26 after removing
+* 67dd1df changedsometing
+* 36fb7b5 with log
+* b807bf7 commiting with global gitignore setting
+* 6b26536 commitimng without mk - invoking global gitignore
+* 5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+* 9de2efc igone c files
+* fbc8852 Commiting for gitignore
+* 9bf8a26 Addded two comments for function calls which are not gcc compliant
+* b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git ls-remote
+fatal: unable to access 'https://github.com/MonitK/Repo1/': OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git ls-remote
+From https://github.com/MonitK/Repo1
+9eb6757373346b698247b42bbb467741dcec9e1f        HEAD
+9eb6757373346b698247b42bbb467741dcec9e1f        refs/heads/master
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git branch -c TEST
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git push -u origin TEST
+Counting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (16/16), 1.43 KiB | 733.00 KiB/s, done.
+Total 16 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 2 local objects.
+To https://github.com/MonitK/Repo1
+ * [new branch]      TEST -> TEST
+Branch 'TEST' set up to track remote branch 'TEST' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ checkout branch TEST
+bash: checkout: command not found
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout branch TEST
+error: pathspec 'branch' did not match any file(s) known to git.
+error: pathspec 'TEST' did not match any file(s) known to git.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout TEST
+Switched to branch 'TEST'
+Your branch is up to date with 'origin/TEST'.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (TEST)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (TEST)
+$ vi log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (TEST)
+$ git status
+On branch TEST
+Your branch is up to date with 'origin/TEST'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   log.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (TEST)
+$ git -a -m "Commiting changes in log.sh in branch"
+Unknown option: -a
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (TEST)
+$ git commit -a -m "Commiting changes in log.sh in branch"
+[TEST 83526ec] Commiting changes in log.sh in branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (TEST)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git branch -d TEST
+error: The branch 'TEST' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D TEST'.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git branch -D TEST
+Deleted branch TEST (was 83526ec).
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git push -d origin TEST
+To https://github.com/MonitK/Repo1
+ - [deleted]         TEST
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git ls-remote
+From https://github.com/MonitK/Repo1
+9eb6757373346b698247b42bbb467741dcec9e1f        HEAD
+9eb6757373346b698247b42bbb467741dcec9e1f        refs/heads/master
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout -b F05
+Switched to a new branch 'F05'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F05)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F05)
+$ vi log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F05)
+$ git checkout master
+Switched to branch 'master'
+M       log.sh
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git branch -b hotfix
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    --list                list branch names
+    -l, --create-reflog   create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git branch -b hotfix
+error: unknown switch `b'
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --verbose         show hash and subject, give twice for upstream branch
+    -q, --quiet           suppress informational messages
+    -t, --track           set up tracking mode (see git-pull(1))
+    -u, --set-upstream-to <upstream>
+                          change the upstream info
+    --unset-upstream      Unset the upstream info
+    --color[=<when>]      use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --abbrev[=<n>]        use <n> digits to display SHA-1s
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --delete          delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --move            move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    -c, --copy            copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    --list                list branch names
+    -l, --create-reflog   create the branch's reflog
+    --edit-description    edit the description for the branch
+    -f, --force           force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --column[=<style>]    list branches in columns
+    --sort <key>          field name to sort on
+    --points-at <object>  print only branches of the object
+    -i, --ignore-case     sorting and filtering are case insensitive
+    --format <format>     format to use for the output
+
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout -b hotfix
+Switched to a new branch 'hotfix'
+M       log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (hotfix)
+$ git checkout master
+Switched to branch 'master'
+M       log.sh
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout F05
+Switched to branch 'F05'
+M       log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F05)
+$ git stash
+Saved working directory and index state WIP on F05: 6943029 Merge branch 'F002'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F05)
+$ git checkout hotfix
+Switched to branch 'hotfix'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (hotfix)
+$ vi log.sh
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (hotfix)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (hotfix)
+$ vi scond.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (hotfix)
+$ git checkout master
+Switched to branch 'master'
+M       scond.c
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git merge hotfix
+Already up to date.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline --graph --all
+*   3281bdf (refs/stash) WIP on F05: 6943029 Merge branch 'F002'
+|\
+| * 1e5c280 index on F05: 6943029 Merge branch 'F002'
+|/
+*   6943029 (HEAD -> master, hotfix, F05) Merge branch 'F002'
+|\
+| * 3701a4d (F002) Initial commit for test.c on F002
+* | 5948912 (F001) Initial commit for scond.c on F001
+|/
+* 4d809c9 Commit scond.c
+* e84b2b2 commiting  second.c on f01 branch
+* 9eb6757 (origin/master) Revert "Commiting for Bug01"
+* 5bfd8f4 Commiting for Bug2
+* 44a032e Commiting for Bug01
+* 6f2a99d Commitimg for testing reset
+* 41cede0 renamedlog
+* f2138bc renamedlog
+* 7b2ff87 renamedlog
+* 7b48a26 after removing
+* 67dd1df changedsometing
+* 36fb7b5 with log
+* b807bf7 commiting with global gitignore setting
+* 6b26536 commitimng without mk - invoking global gitignore
+* 5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+* 9de2efc igone c files
+* fbc8852 Commiting for gitignore
+* 9bf8a26 Addded two comments for function calls which are not gcc compliant
+* b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline
+6943029 (HEAD -> master, hotfix, F05) Merge branch 'F002'
+5948912 (F001) Initial commit for scond.c on F001
+3701a4d (F002) Initial commit for test.c on F002
+4d809c9 Commit scond.c
+e84b2b2 commiting  second.c on f01 branch
+9eb6757 (origin/master) Revert "Commiting for Bug01"
+5bfd8f4 Commiting for Bug2
+44a032e Commiting for Bug01
+6f2a99d Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline --all
+3281bdf (refs/stash) WIP on F05: 6943029 Merge branch 'F002'
+1e5c280 index on F05: 6943029 Merge branch 'F002'
+6943029 (HEAD -> master, hotfix, F05) Merge branch 'F002'
+5948912 (F001) Initial commit for scond.c on F001
+3701a4d (F002) Initial commit for test.c on F002
+4d809c9 Commit scond.c
+e84b2b2 commiting  second.c on f01 branch
+9eb6757 (origin/master) Revert "Commiting for Bug01"
+5bfd8f4 Commiting for Bug2
+44a032e Commiting for Bug01
+6f2a99d Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ history
+    1  git
+    2  git config
+    3  git config -l
+    4  git config-l
+    5  git config --global
+    6  git config --global user.name"MonitK"
+    7  git config --global list
+    8  git config --global List
+    9  git config --global user.name "MonitK"
+   10  git config --global user.email "mkapoor@ddn.upes.ac.in"
+   11  git config --list
+   12  git init
+   13  git config --user,name
+   14  git config --user.name
+   15  git user.name
+   16  git config user.name
+   17  git config --show-origin rerere.autoUpdate
+   18  git help config
+   19  git remote add origin https://github.com/Username/Repository
+   20  git remote add origin https://github.com/MonitK/Learngit_monit
+   21  git clone https://github.com/ravitomar7/Jmd
+   22  git add 8thJan.c
+   23  git add Learngit_Monit/8thJan.c
+   24  pwd
+   25  cd Learngit_monit
+   26  ls
+   27  git add src
+   28  git status
+   29  git commit -m "The file created on 8th Jan"
+   30  git status
+   31  git push
+   32  git push
+   33  git push
+   34  cd C:
+   35  ls
+   36  cd Users/
+   37  cd mkapoor/Workingdirectory/
+   38  ls
+   39  vi myfirst.c
+   40  git status
+   41  git add .
+   42  git commit -m "Commitimg for testing reset"
+   43  git push
+   44  vi myfirst.c
+   45  git status
+   46  git stage
+   47  git stage .
+   48  git status
+   49  git reset
+   50  git status
+   51  git log --oneline
+   52  git add .
+   53  git commit -m "Commiting to reset later"
+   54  git log --oneline
+   55  git reset --hard
+   56  git log --oneline
+   57  git reset --hard <6f2a99d >
+   58  git reset --hard 6f2a99d
+   59  git log --oneline
+   60  ls
+   61  git status
+   62  vi log.sh
+   63  git status
+   64  git add .
+   65  git commit -m "Commiting for Bug01"
+   66  git log --oneline
+   67  vi log.sh
+   68  git add .
+   69  git add .
+   70  git commit -m "Commiting for Bug2"
+   71  git log --oneline
+   72  git revert 44a032e
+   73  git log --oneline
+   74  vi log.sh
+   75  git revert --continue
+   76  vi log.
+   77  vi log.sh
+   78  git revert --continue
+   79  git status
+   80  git add log.sh
+   81  git revert --continue
+   82  git log --oneline
+   83  git push
+   84  git log --oneline
+   85  git checkout -b f01
+   86  git log --oneline
+   87  vi scond.c
+   88  git add .
+   89  git commit -m "commiting  second.c on f01 branch"
+   90  git status
+   91  git status
+   92  git add .
+   93  git commit -m "commiting  second.c on f01 branch"
+   94  git log --oneline
+   95  git checkout master
+   96  git log --oneline
+   97  git clone https://github.com/ravitomar7/om.git
+   98  cd om
+   99  git branch
+  100  git fetch
+  101  git checkout Monit_Sir
+  102  vi menu.c
+  103  git add .
+  104  git commit -m "Menu.c commiting"
+  105  git push
+  106  git push
+  107  git ls-remote
+  108  git checkout master
+  109  cd ..
+  110  ls
+  111  git branch
+  112  git checkout f01
+  113  ls
+  114  vi scond.c
+  115  ls
+  116  git checkout master
+  117  git add .
+  118  git add scond.c
+  119  ls
+  120  git checkout master
+  121  git commit -m "Commit scond.c"
+  122  git checkout master
+  123  rmdir om\
+  124  rmdir om
+  125  rmdir -r om
+  126  rmdir --r om
+  127  ls
+  128  git checkout master
+  129  git checkout -b f02
+  130  touch third.c
+  131  vi third.c
+  132  git add .
+  133  git commit -m "imitial commiting third.c in f02"
+  134  gitk
+  135  git branch
+  136  git log --oneline --graph -all
+  137  git log --oneline --graph --all
+  138  git checkout master
+  139  git log --oneline --graph --all
+  140  gitk
+  141  git merge f01
+  142  git merge f02
+  143  git branch -d f01
+  144  git branch -d f02
+  145  git checkout -b F001
+  146  vi prog1.c
+  147  ls
+  148  vi test.c
+  149  git add .
+  150  git commit -m "Initial commit for test.c on F001"
+  151  git checkout master
+  152  git checkout -b F002
+  153  ls
+  154  git checkout master
+  155  git branch -D
+  156  git branch -D F001
+  157  git branch -D F002
+  158  git status
+  159  ls
+  160  git checkout -b F001
+  161  ls
+  162  git checkout master
+  163  git checkout -b F002
+  164  ls
+  165  vi test.c
+  166  git add .
+  167  git commit -m "Initial commit for test.c on F002"
+  168  git checkout F001
+  169  ls
+  170  vi scond.c
+  171  git add .
+  172  git commit -m "Initial commit for scond.c on F001"
+  173  git checkout master
+  174  git log --oneline --graph --all
+  175  gitk
+  176  git merge F001
+  177  git merge F002
+  178  git log --oneline --graph --all
+  179  git ls-remote
+  180  git ls-remote
+  181  git branch -c TEST
+  182  git push -u origin TEST
+  183  checkout branch TEST
+  184  git checkout branch TEST
+  185  git checkout TEST
+  186  ls
+  187  vi log.sh
+  188  git status
+  189  git -a -m "Commiting changes in log.sh in branch"
+  190  git commit -a -m "Commiting changes in log.sh in branch"
+  191  git checkout master
+  192  git branch -d TEST
+  193  git branch -D TEST
+  194  git push -d origin TEST
+  195  git ls-remote
+  196  ls
+  197  git checkout -b F05
+  198  ls
+  199  vi log.sh
+  200  git checkout master
+  201  git branch -b hotfix
+  202  git branch -b hotfix
+  203  git checkout -b hotfix
+  204  git checkout master
+  205  git checkout F05
+  206  git stash
+  207  git checkout hotfix
+  208  vi log.sh
+  209  ls
+  210  vi scond.c
+  211  git checkout master
+  212  git merge hotfix
+  213  git log --oneline --graph --all
+  214  git log --oneline
+  215  git log --oneline --all
+  216  history
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout hotfix
+Switched to branch 'hotfix'
+M       scond.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (hotfix)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (hotfix)
+$ git commit -m "Commiting ffrom Hotfix: scond.c updated"
+[hotfix 5c0eddb] Commiting ffrom Hotfix: scond.c updated
+ 1 file changed, 2 insertions(+)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (hotfix)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git merge hotfix
+Updating 6943029..5c0eddb
+Fast-forward
+ scond.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout F05
+Switched to branch 'F05'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F05)
+$ git stash apply
+On branch F05
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   log.sh
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F05)
+$ git add .
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F05)
+$ git commit -m "Commiting after stash apply"
+[F05 3880d93] Commiting after stash apply
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (F05)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 6 commits.
+  (use "git push" to publish your local commits)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git merge F05
+Merge made by the 'recursive' strategy.
+ log.sh | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ cat log.sh
+git log -n 2
+#comments for Bug1
+#comments for F05
+#after this hot fix will take over
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ cat scond.c
+#include<stdio.h>
+main()
+{
+        printf("new line eneteered for F001");
+        printf("second.c is created");
+        printf("from inside hotfix");
+}
+
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git stash list
+stash@{0}: WIP on F05: 6943029 Merge branch 'F002'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git tag
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git tag v1.0
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git tag
+v1.0
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline --all
+fc0f2c8 (HEAD -> master, tag: v1.0) Merge branch 'F05'
+3880d93 (F05) Commiting after stash apply
+5c0eddb (hotfix) Commiting ffrom Hotfix: scond.c updated
+3281bdf (refs/stash) WIP on F05: 6943029 Merge branch 'F002'
+1e5c280 index on F05: 6943029 Merge branch 'F002'
+6943029 Merge branch 'F002'
+5948912 (F001) Initial commit for scond.c on F001
+3701a4d (F002) Initial commit for test.c on F002
+4d809c9 Commit scond.c
+e84b2b2 commiting  second.c on f01 branch
+9eb6757 (origin/master) Revert "Commiting for Bug01"
+5bfd8f4 Commiting for Bug2
+44a032e Commiting for Bug01
+6f2a99d Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git push origin v1.0
+Counting objects: 24, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (24/24), 2.26 KiB | 579.00 KiB/s, done.
+Total 24 (delta 11), reused 0 (delta 0)
+remote: Resolving deltas: 100% (11/11), completed with 2 local objects.
+To https://github.com/MonitK/Repo1
+ * [new tag]         v1.0 -> v1.0
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ vi aftertag.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git commit -a -m "Commiting 1st time after v1.0"
+On branch master
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+        aftertag.c
+
+nothing added to commit but untracked files present
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git add .
+warning: LF will be replaced by CRLF in aftertag.c.
+The file will have its original line endings in your working directory.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git commit -m "Commiting 1st time after v1.0"
+[master 2b244be] Commiting 1st time after v1.0
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aftertag.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git log --oneline --all
+2b244be (HEAD -> master) Commiting 1st time after v1.0
+fc0f2c8 (tag: v1.0) Merge branch 'F05'
+3880d93 (F05) Commiting after stash apply
+5c0eddb (hotfix) Commiting ffrom Hotfix: scond.c updated
+3281bdf (refs/stash) WIP on F05: 6943029 Merge branch 'F002'
+1e5c280 index on F05: 6943029 Merge branch 'F002'
+6943029 Merge branch 'F002'
+5948912 (F001) Initial commit for scond.c on F001
+3701a4d (F002) Initial commit for test.c on F002
+4d809c9 Commit scond.c
+e84b2b2 commiting  second.c on f01 branch
+9eb6757 (origin/master) Revert "Commiting for Bug01"
+5bfd8f4 Commiting for Bug2
+44a032e Commiting for Bug01
+6f2a99d Commitimg for testing reset
+41cede0 renamedlog
+f2138bc renamedlog
+7b2ff87 renamedlog
+7b48a26 after removing
+67dd1df changedsometing
+36fb7b5 with log
+b807bf7 commiting with global gitignore setting
+6b26536 commitimng without mk - invoking global gitignore
+5f4ef8d commitimg after gitignore modiefied for positive regular expression and subfolder
+9de2efc igone c files
+fbc8852 Commiting for gitignore
+9bf8a26 Addded two comments for function calls which are not gcc compliant
+b596786 commiting from working directory into repo1
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (master)
+$ git checkout -b newbranch v1.0
+Switched to a new branch 'newbranch'
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (newbranch)
+$ ls
+ log.bat   log.sh   log.txt   mk.kk   myfirst.c  'New Text Document.c'   patch.txt   results.xlsx   scond.c   sortingprogoflabs.txt   sub/   test.c
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (newbranch)
+$ git push
+fatal: The current branch newbranch has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin newbranch
+
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (newbranch)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 286 bytes | 286.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/MonitK/Repo1
+   9eb6757..2b244be  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (newbranch)
+$ ^C
+
+mkapoor@mkapoor-ltp MINGW64 ~/Workingdirectory (newbranch)
+$
