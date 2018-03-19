@@ -1,0 +1,14 @@
+diff --git a/myfirst.c b/myfirst.c
+index 5df15a6..b10daa5 100644
+--- a/myfirst.c
++++ b/myfirst.c
+@@ -1,6 +1,8 @@
+ #include<stdio.h>
+-#include<math.h>
++//#include<math.h>
++////commented math.h
+ main()
+ {
+ 	printf("helo world");
++	printf("\n new line demo");
+ }

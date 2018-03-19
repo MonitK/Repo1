@@ -1,0 +1,13 @@
+diff --git a/myfirst.c b/myfirst.c
+index b10daa5..25b7a88 100644
+--- a/myfirst.c
++++ b/myfirst.c
+@@ -5,4 +5,8 @@ main()
+ {
+ 	printf("helo world");
+ 	printf("\n new line demo");
++//comment1
++//comment2
++//comment3
+ }
++
