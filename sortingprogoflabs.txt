@@ -8,6 +8,7 @@ int i,j,temp,a[25],n;
 main()
 {
 //clrscr();
+// do not use clearscreen in gcc compliant codes
 // clrscr is not used in GCC
 printf("\n\nEnter how many numbers you want to sort\n\n");
 scanf("%d",&n);
